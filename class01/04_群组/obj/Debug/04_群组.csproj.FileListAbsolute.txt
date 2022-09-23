@@ -1,0 +1,7 @@
+C:\Users\tuya\Desktop\C#\class01\04_群组\bin\Debug\04_群组.exe.config
+C:\Users\tuya\Desktop\C#\class01\04_群组\bin\Debug\04_群组.exe
+C:\Users\tuya\Desktop\C#\class01\04_群组\bin\Debug\04_群组.pdb
+C:\Users\tuya\Desktop\C#\class01\04_群组\obj\Debug\04_群组.csproj.AssemblyReference.cache
+C:\Users\tuya\Desktop\C#\class01\04_群组\obj\Debug\04_群组.csproj.CoreCompileInputs.cache
+C:\Users\tuya\Desktop\C#\class01\04_群组\obj\Debug\04_群组.exe
+C:\Users\tuya\Desktop\C#\class01\04_群组\obj\Debug\04_群组.pdb

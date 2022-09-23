@@ -1,0 +1,7 @@
+C:\Users\tuya\Desktop\C#\class01\07_登录\obj\Debug\07_登录.csproj.AssemblyReference.cache
+C:\Users\tuya\Desktop\C#\class01\07_登录\obj\Debug\07_登录.csproj.CoreCompileInputs.cache
+C:\Users\tuya\Desktop\C#\class01\07_登录\bin\Debug\07_登录.exe.config
+C:\Users\tuya\Desktop\C#\class01\07_登录\bin\Debug\07_登录.exe
+C:\Users\tuya\Desktop\C#\class01\07_登录\bin\Debug\07_登录.pdb
+C:\Users\tuya\Desktop\C#\class01\07_登录\obj\Debug\07_登录.exe
+C:\Users\tuya\Desktop\C#\class01\07_登录\obj\Debug\07_登录.pdb

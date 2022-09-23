@@ -1,0 +1,7 @@
+C:\Users\tuya\Desktop\C#\class01\05_冒泡排序\bin\Debug\05_冒泡排序.exe.config
+C:\Users\tuya\Desktop\C#\class01\05_冒泡排序\bin\Debug\05_冒泡排序.exe
+C:\Users\tuya\Desktop\C#\class01\05_冒泡排序\bin\Debug\05_冒泡排序.pdb
+C:\Users\tuya\Desktop\C#\class01\05_冒泡排序\obj\Debug\05_冒泡排序.csproj.AssemblyReference.cache
+C:\Users\tuya\Desktop\C#\class01\05_冒泡排序\obj\Debug\05_冒泡排序.csproj.CoreCompileInputs.cache
+C:\Users\tuya\Desktop\C#\class01\05_冒泡排序\obj\Debug\05_冒泡排序.exe
+C:\Users\tuya\Desktop\C#\class01\05_冒泡排序\obj\Debug\05_冒泡排序.pdb

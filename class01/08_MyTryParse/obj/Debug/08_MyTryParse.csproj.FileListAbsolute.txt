@@ -1,0 +1,6 @@
+C:\Users\tuya\Desktop\C#\class01\08_MyTryParse\bin\Debug\08_MyTryParse.exe.config
+C:\Users\tuya\Desktop\C#\class01\08_MyTryParse\bin\Debug\08_MyTryParse.exe
+C:\Users\tuya\Desktop\C#\class01\08_MyTryParse\bin\Debug\08_MyTryParse.pdb
+C:\Users\tuya\Desktop\C#\class01\08_MyTryParse\obj\Debug\08_MyTryParse.csproj.CoreCompileInputs.cache
+C:\Users\tuya\Desktop\C#\class01\08_MyTryParse\obj\Debug\08_MyTryParse.exe
+C:\Users\tuya\Desktop\C#\class01\08_MyTryParse\obj\Debug\08_MyTryParse.pdb

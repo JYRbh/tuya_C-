@@ -1,0 +1,7 @@
+C:\Users\tuya\Desktop\C#\class01\06_方法\bin\Debug\06_方法.exe.config
+C:\Users\tuya\Desktop\C#\class01\06_方法\bin\Debug\06_方法.exe
+C:\Users\tuya\Desktop\C#\class01\06_方法\bin\Debug\06_方法.pdb
+C:\Users\tuya\Desktop\C#\class01\06_方法\obj\Debug\06_方法.csproj.AssemblyReference.cache
+C:\Users\tuya\Desktop\C#\class01\06_方法\obj\Debug\06_方法.csproj.CoreCompileInputs.cache
+C:\Users\tuya\Desktop\C#\class01\06_方法\obj\Debug\06_方法.exe
+C:\Users\tuya\Desktop\C#\class01\06_方法\obj\Debug\06_方法.pdb
