@@ -1,0 +1,10 @@
+C:\Users\tuya\Desktop\git\Form\FormsTest\bin\Debug\FormsTest.exe.config
+C:\Users\tuya\Desktop\git\Form\FormsTest\bin\Debug\FormsTest.exe
+C:\Users\tuya\Desktop\git\Form\FormsTest\bin\Debug\FormsTest.pdb
+C:\Users\tuya\Desktop\git\Form\FormsTest\obj\Debug\FormsTest.csproj.AssemblyReference.cache
+C:\Users\tuya\Desktop\git\Form\FormsTest\obj\Debug\FormsTest.Form1.resources
+C:\Users\tuya\Desktop\git\Form\FormsTest\obj\Debug\FormsTest.Properties.Resources.resources
+C:\Users\tuya\Desktop\git\Form\FormsTest\obj\Debug\FormsTest.csproj.GenerateResource.cache
+C:\Users\tuya\Desktop\git\Form\FormsTest\obj\Debug\FormsTest.csproj.CoreCompileInputs.cache
+C:\Users\tuya\Desktop\git\Form\FormsTest\obj\Debug\FormsTest.exe
+C:\Users\tuya\Desktop\git\Form\FormsTest\obj\Debug\FormsTest.pdb

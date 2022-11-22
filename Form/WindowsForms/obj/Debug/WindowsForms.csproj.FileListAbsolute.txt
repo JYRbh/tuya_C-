@@ -1,0 +1,10 @@
+C:\Users\tuya\Desktop\git\Form\WindowsForms\bin\Debug\WindowsForms.exe.config
+C:\Users\tuya\Desktop\git\Form\WindowsForms\bin\Debug\WindowsForms.exe
+C:\Users\tuya\Desktop\git\Form\WindowsForms\bin\Debug\WindowsForms.pdb
+C:\Users\tuya\Desktop\git\Form\WindowsForms\obj\Debug\WindowsForms.csproj.AssemblyReference.cache
+C:\Users\tuya\Desktop\git\Form\WindowsForms\obj\Debug\WindowsForms.Form1.resources
+C:\Users\tuya\Desktop\git\Form\WindowsForms\obj\Debug\WindowsForms.Properties.Resources.resources
+C:\Users\tuya\Desktop\git\Form\WindowsForms\obj\Debug\WindowsForms.csproj.GenerateResource.cache
+C:\Users\tuya\Desktop\git\Form\WindowsForms\obj\Debug\WindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\tuya\Desktop\git\Form\WindowsForms\obj\Debug\WindowsForms.exe
+C:\Users\tuya\Desktop\git\Form\WindowsForms\obj\Debug\WindowsForms.pdb

@@ -1,0 +1,62 @@
+		private void button4_Click(object sender, EventArgs e)
+		{
+			SearchAndAddSerialToComboBox(serialPort2, comboBox2);
+		}
+        private void SearchAndAddSerialToComboBox(System.IO.Ports.SerialPort MyPort, ComboBox MyBox)
+        {                                                               //将可用端口号添加到ComboBox
+            string[] MyString = new string[20];                         //最多容纳20个，太多会影响调试效率
+            string Buffer;                                              //缓存
+            MyBox.Items.Clear();                                        //清空ComboBox内容
+            for (int i = 1; i < 20; i++)                                //循环
+            {
+                try                                                     //核心原理是依靠try和catch完成遍历
+                {
+                    Buffer = "COM" + i.ToString();
+                    MyPort.PortName = Buffer;
+                    MyPort.Open();                                      //如果失败，后面的代码不会执行
+                    MyString[i - 1] = Buffer;
+                    MyBox.Items.Add(Buffer);                            //打开成功，添加至下俩列表
+                    MyPort.Close();                                     //关闭
+                }
+                catch
+                {
+
+                }
+            }
+            //   MyBox.Text = MyString[0];                                   //初始化
+        }
+
+
+        //打开串口
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                serialPort2.PortName = comboBox2.Text;//开启的串口名称为选择串口的ComboBox组件中的内容
+                //serialPort1.BaudRate = 9600;
+                serialPort2.BaudRate = Convert.ToInt32(comboBox1.Text);//将选择波特率ComboBox组件中的数据转为Int型，并且进行波特率的设置
+                serialPort2.Open();//打开串口
+                button5.Enabled = false;//打开串口按钮不可用
+                button6.Enabled = true;//关闭串口可用
+                                       //  timer1.Start();
+            }
+            catch//如果打开串口失败 需要做如下警示
+            {
+                MessageBox.Show("打开串口失败，请检查相关设置。", "错误");
+            }
+        }
+
+        //关闭串口
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                serialPort2.Close();//关闭串口
+                button5.Enabled = true;//打开串口按钮可用
+                button6.Enabled = false;//关闭串口按钮不可用
+            }
+            catch (Exception err)//一般情况下关闭串口不会出错，所以不需要加处理程序
+            {
+
+            }
+        }
