@@ -66,7 +66,7 @@ namespace Serial_conmmunicate
 		 ****/
 		private void button2_Click(object sender, EventArgs e)
 		{
-			GetComListAddtoComboBox(serialPort1,comboBox1);
+			GetComListAddtoComboBox(serialPort1, comboBox1);
 		}
 
 		/// <summary>
@@ -77,8 +77,8 @@ namespace Serial_conmmunicate
 		private void button3_Click(object sender, EventArgs e)
 		{
 			byte[] Data = new byte[1];
-			string text = textBox2.Text.Replace(" ","");
-			if(serialPort1.IsOpen)//串口是否打开
+			string text = textBox2.Text.Replace(" ", "");
+			if (serialPort1.IsOpen)//串口是否打开
 			{
 				if (textBox2.Text != "")//是否有数据
 				{
@@ -103,8 +103,8 @@ namespace Serial_conmmunicate
 						{
 							for (int i = 0; i < text.Length / 2; i++)
 							{
-								Data[0] = Convert.ToByte(text.Substring(i*2,2),16);//Substring(数据，取的位数)   转为16进制
-								serialPort1.Write(Data,0,1);//循环发送（如果输入字符为0A0BB,则只发送0A，0B）
+								Data[0] = Convert.ToByte(text.Substring(i * 2, 2), 16);//Substring(数据，取的位数)   转为16进制
+								serialPort1.Write(Data, 0, 1);//循环发送（如果输入字符为0A0BB,则只发送0A，0B）
 							}
 						}
 						catch (Exception err)
@@ -116,20 +116,20 @@ namespace Serial_conmmunicate
 						}
 					}
 					textBox1.AppendText(time_send + textBox2.Text + "\r\n");
-					WriteString(time_send+textBox2.Text);
+					WriteString(time_send + textBox2.Text);
 				}
 			}
-			else 
+			else
 			{
 				MessageBox.Show("串口未打开");
 			}
 		}
 
-		 //// <summary>
-		 /// 串口打开/关闭
-		 /// </summary>
-		 /// <param name="sender"></param>
-		 /// <param name="e"></param>
+		//// <summary>
+		/// 串口打开/关闭
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void button1_Click(object sender, EventArgs e)
 		{
 			try
@@ -143,7 +143,7 @@ namespace Serial_conmmunicate
 					serialPort1.BaudRate = Convert.ToInt32(comboBox2.Text);//获取比特率
 					serialPort1.DataBits = 8;
 					serialPort1.StopBits = StopBits.One;
-					serialPort1.Parity = Parity.None; 
+					serialPort1.Parity = Parity.None;
 
 					serialPort1.Open();
 					textBox1.AppendText("打开串口成功\r\n");
@@ -158,7 +158,7 @@ namespace Serial_conmmunicate
 						serialPort1.Close();
 				}
 			}
-			catch 
+			catch
 			{
 				button1.Text = "打开串口";
 				MessageBox.Show("串口打开失败");
@@ -176,7 +176,7 @@ namespace Serial_conmmunicate
 			if (!radioButton3.Checked)//如果接收字符串
 			{
 				string str = serialPort1.ReadExisting();//字符串读取方式
-				textBox1.AppendText(time_receive + str +"\r\n");//在textBox1内显示字符串
+				textBox1.AppendText(time_receive + str + "\r\n");//在textBox1内显示字符串
 				WriteString(str);
 			}
 			else//如果接收数值
@@ -185,9 +185,9 @@ namespace Serial_conmmunicate
 																//serialPort1.BytesToRead获取的数值是缓冲区中数据的长度
 				serialPort1.Read(data, 0, data.Length);//读取
 				textBox1.AppendText(time_receive);//打印时间戳
-				for (int i=0; i<data.Length ;i++)
+				for (int i = 0; i < data.Length; i++)
 				{
-					textBox1.AppendText(data[i].ToString("x2").ToUpper()+" "); //给只有一位的数值填补“0”
+					textBox1.AppendText(data[i].ToString("x2").ToUpper() + " "); //给只有一位的数值填补“0”
 				}
 				WriteByte(data);
 				textBox1.AppendText("\r\n");
@@ -270,7 +270,7 @@ namespace Serial_conmmunicate
 			{
 				using (StreamWriter wt = new StreamWriter(filePath, true))
 				{
-					wt.WriteLine(time_receive + buffer); 
+					wt.WriteLine(time_receive + buffer);
 				}
 			}
 			catch
@@ -278,5 +278,97 @@ namespace Serial_conmmunicate
 				MessageBox.Show("写入有问题");
 			}
 		}
+
+
+		/// <summary>
+		/// 文件另存为
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void ToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				SaveFileDialog saveFileDialogv = new SaveFileDialog();
+
+				//设置默认打开文件目录
+				saveFileDialogv.InitialDirectory = "d:\\";
+				//设置文件类型，这里才使用筛选器进行设置
+				saveFileDialogv.Filter = "文本文件(*.txt)|*.txt";
+				//保存对话框是否记录上次打开的目录
+				saveFileDialogv.RestoreDirectory = true;
+				//设置默认的文件名
+				saveFileDialogv.FileName = "123";
+				//记忆之前打开的目录
+				saveFileDialogv.RestoreDirectory = true;
+
+				DialogResult dr = saveFileDialogv.ShowDialog();
+				if (dr == DialogResult.OK && saveFileDialogv.FileName.Length > 0)
+				{
+					MessageBox.Show("保存在" + saveFileDialogv.FileName);
+				}
+			}
+			catch (Exception f)
+			{
+				MessageBox.Show(f.Message);
+			}
+		}
+
+
+
+		/// <summary>
+		/// 文件打开
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void ToolStripMenuItemOpen_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				OpenFileDialog openFileDialog = new OpenFileDialog();
+
+				//设置默认打开文件目录
+				openFileDialog.InitialDirectory = "d:\\";
+				//设定默认文件名
+				openFileDialog.FileName = "";
+				//设置文件过滤类型
+				openFileDialog.Filter = "文本文件(*.txt)|*.txt";
+
+				DialogResult dr = openFileDialog.ShowDialog();
+
+				if (dr == DialogResult.OK && openFileDialog.FileName.Length > 0)
+				{
+					string filePath = openFileDialog.FileName;
+					string fileName = openFileDialog.SafeFileName;
+					OutLog("用户选择的文件目录为：" + filePath);
+					OutLog("用户选择的文件名称为：" + fileName);
+
+					using (FileStream fsRead = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Read))
+					{
+						byte[] buffer = new byte[1024 * 1024 * 5];
+						int r = fsRead.Read(buffer, 0, buffer.Length);
+						OutLog(Encoding.Default.GetString(buffer, 0, r));
+					}
+				}
+			}
+			catch (Exception f)
+			{
+				MessageBox.Show(f.Message);
+			}
+		}
+
+		/// <summary>
+		/// 输出日志
+		/// </summary>
+		/// <param name="strLog"></param>
+		private void OutLog(string strLog)
+		{
+			if (textBox1.GetLineFromCharIndex(textBox1.Text.Length) > 1000)
+			{
+				textBox1.Clear();
+			}
+			textBox1.AppendText(DateTime.Now.ToString("HH:mm:ss")+strLog+"\r\n");
+		}
+
 	}
 }

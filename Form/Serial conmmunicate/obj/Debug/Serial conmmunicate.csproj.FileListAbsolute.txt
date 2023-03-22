@@ -8,3 +8,13 @@ C:\Users\tuya\Desktop\git\Form\Serial conmmunicate\obj\Debug\Serial conmmunicate
 C:\Users\tuya\Desktop\git\Form\Serial conmmunicate\obj\Debug\Serial conmmunicate.csproj.CoreCompileInputs.cache
 C:\Users\tuya\Desktop\git\Form\Serial conmmunicate\obj\Debug\Serial conmmunicate.exe
 C:\Users\tuya\Desktop\git\Form\Serial conmmunicate\obj\Debug\Serial conmmunicate.pdb
+C:\Users\tuya\Desktop\C#\Form\Serial conmmunicate\bin\Debug\Serial conmmunicate.exe.config
+C:\Users\tuya\Desktop\C#\Form\Serial conmmunicate\bin\Debug\Serial conmmunicate.exe
+C:\Users\tuya\Desktop\C#\Form\Serial conmmunicate\bin\Debug\Serial conmmunicate.pdb
+C:\Users\tuya\Desktop\C#\Form\Serial conmmunicate\obj\Debug\Serial conmmunicate.csproj.AssemblyReference.cache
+C:\Users\tuya\Desktop\C#\Form\Serial conmmunicate\obj\Debug\Serial_conmmunicate.Form1.resources
+C:\Users\tuya\Desktop\C#\Form\Serial conmmunicate\obj\Debug\Serial_conmmunicate.Properties.Resources.resources
+C:\Users\tuya\Desktop\C#\Form\Serial conmmunicate\obj\Debug\Serial conmmunicate.csproj.GenerateResource.cache
+C:\Users\tuya\Desktop\C#\Form\Serial conmmunicate\obj\Debug\Serial conmmunicate.csproj.CoreCompileInputs.cache
+C:\Users\tuya\Desktop\C#\Form\Serial conmmunicate\obj\Debug\Serial conmmunicate.exe
+C:\Users\tuya\Desktop\C#\Form\Serial conmmunicate\obj\Debug\Serial conmmunicate.pdb

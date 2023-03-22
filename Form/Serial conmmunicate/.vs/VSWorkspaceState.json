@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\bin",
+    "\\bin\\Debug",
+    "\\bin\\Release",
+    "\\Properties"
   ],
+  "SelectedNode": "\\Serial conmmunicate.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,13 @@
+H:\office\workspace\VS_ws\uart\uart\bin\Release\uart.exe.config
+H:\office\workspace\VS_ws\uart\uart\bin\Release\uart.exe.manifest
+H:\office\workspace\VS_ws\uart\uart\bin\Release\uart.application
+H:\office\workspace\VS_ws\uart\uart\bin\Release\uart.exe
+H:\office\workspace\VS_ws\uart\uart\bin\Release\uart.pdb
+H:\office\workspace\VS_ws\uart\uart\obj\Release\uart.MainForm.resources
+H:\office\workspace\VS_ws\uart\uart\obj\Release\uart.Properties.Resources.resources
+H:\office\workspace\VS_ws\uart\uart\obj\Release\uart.csproj.GenerateResource.Cache
+H:\office\workspace\VS_ws\uart\uart\obj\Release\uart.TrustInfo.xml
+H:\office\workspace\VS_ws\uart\uart\obj\Release\uart.exe.manifest
+H:\office\workspace\VS_ws\uart\uart\obj\Release\uart.application
+H:\office\workspace\VS_ws\uart\uart\obj\Release\uart.exe
+H:\office\workspace\VS_ws\uart\uart\obj\Release\uart.pdb

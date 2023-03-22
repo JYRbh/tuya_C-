@@ -52,8 +52,17 @@ namespace Serial_conmmunicate
 			this.button4 = new System.Windows.Forms.Button();
 			this.button5 = new System.Windows.Forms.Button();
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
+			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemOpen = new System.Windows.Forms.ToolStripMenuItem();
+			this.编辑ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.格式ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.查看ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
+			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// comboBox1
@@ -106,6 +115,7 @@ namespace Serial_conmmunicate
 			// label1
 			// 
 			this.label1.AutoSize = true;
+			this.label1.ForeColor = System.Drawing.Color.Black;
 			this.label1.Location = new System.Drawing.Point(74, 44);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(29, 12);
@@ -253,6 +263,67 @@ namespace Serial_conmmunicate
 			this.checkBox1.UseVisualStyleBackColor = true;
 			this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
 			// 
+			// menuStrip1
+			// 
+			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.文件ToolStripMenuItem,
+            this.编辑ToolStripMenuItem,
+            this.格式ToolStripMenuItem,
+            this.查看ToolStripMenuItem,
+            this.帮助ToolStripMenuItem});
+			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Size = new System.Drawing.Size(778, 25);
+			this.menuStrip1.TabIndex = 22;
+			this.menuStrip1.Text = "menuStrip1";
+			// 
+			// 文件ToolStripMenuItem
+			// 
+			this.文件ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem,
+            this.ToolStripMenuItemOpen});
+			this.文件ToolStripMenuItem.Name = "文件ToolStripMenuItem";
+			this.文件ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+			this.文件ToolStripMenuItem.Text = "文件";
+			// 
+			// ToolStripMenuItem
+			// 
+			this.ToolStripMenuItem.Name = "ToolStripMenuItem";
+			this.ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.ToolStripMenuItem.Text = "另存为";
+			this.ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
+			// 
+			// ToolStripMenuItemOpen
+			// 
+			this.ToolStripMenuItemOpen.Name = "ToolStripMenuItemOpen";
+			this.ToolStripMenuItemOpen.Size = new System.Drawing.Size(180, 22);
+			this.ToolStripMenuItemOpen.Text = "打开";
+			this.ToolStripMenuItemOpen.Click += new System.EventHandler(this.ToolStripMenuItemOpen_Click);
+			// 
+			// 编辑ToolStripMenuItem
+			// 
+			this.编辑ToolStripMenuItem.Name = "编辑ToolStripMenuItem";
+			this.编辑ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+			this.编辑ToolStripMenuItem.Text = "编辑";
+			// 
+			// 格式ToolStripMenuItem
+			// 
+			this.格式ToolStripMenuItem.Name = "格式ToolStripMenuItem";
+			this.格式ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+			this.格式ToolStripMenuItem.Text = "格式";
+			// 
+			// 查看ToolStripMenuItem
+			// 
+			this.查看ToolStripMenuItem.Name = "查看ToolStripMenuItem";
+			this.查看ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+			this.查看ToolStripMenuItem.Text = "查看";
+			// 
+			// 帮助ToolStripMenuItem
+			// 
+			this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
+			this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+			this.帮助ToolStripMenuItem.Text = "帮助";
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -274,6 +345,8 @@ namespace Serial_conmmunicate
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.comboBox2);
 			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.menuStrip1);
+			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.Load += new System.EventHandler(this.Form1_Load);
@@ -281,6 +354,8 @@ namespace Serial_conmmunicate
 			this.panel1.PerformLayout();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
+			this.menuStrip1.ResumeLayout(false);
+			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -310,6 +385,14 @@ namespace Serial_conmmunicate
 		private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.CheckBox checkBox1;
+		private System.Windows.Forms.MenuStrip menuStrip1;
+		private System.Windows.Forms.ToolStripMenuItem 文件ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem 编辑ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem 格式ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem 查看ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemOpen;
 	}
 }
 
